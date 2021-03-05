@@ -19,8 +19,8 @@ you can create an account to be a Student or an Professor.<i> The app isn't full
   <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/Login.png" width="250" />
   <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/Register.png" width="250" />
   <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/Home.png" width="250" />
-  <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/GiveCloasses.png" width="250" />
-  <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/Profle.png" width="250" />
+  <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/GiveClasses.png" width="250" />
+  <img src="https://github.com/CauaS1/devclasses/blob/master/screenshots/Profile.png" width="250" />
 </p>
 
 ## Technologies
