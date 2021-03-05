@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Dimensions, TextInput, FlatList, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, TextInput, FlatList, TouchableOpacity, Image, StatusBar } from 'react-native';
 let ScreenHeight = Dimensions.get("window").height;
 import Header from '../components/Header';
 
@@ -9,6 +9,7 @@ export default class Main extends Component {
 
     return (
       <View style={styles.container}>
+
         <Header phrase={this.props.text} img={this.props.imgStudy} />
         <View style={styles.searchsComponents}>
           <View style={styles.form} >
@@ -18,8 +19,6 @@ export default class Main extends Component {
             </TouchableOpacity>
           </View>
         </View>
-
-
 
           <FlatList
             data={classData}
@@ -62,8 +61,8 @@ const classes = StyleSheet.create({
     borderColor: "#a58dff",
     borderRadius: 8,
     alignItems: 'center',
-    margin: 10,
-    },
+    margin: 10
+  },
 
   header: {
     width: "100%",
@@ -99,23 +98,26 @@ const classes = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center"
   }
-
 })
 
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
+
   searchsComponents: {
     width: "100%",
     alignItems: "center",
     marginTop: 140,
   },
   form: {
-    width: "88%",
+    width: "100%",
     flexDirection: "row",
     justifyContent: 'space-around',
   },
   input: {
-    width: 200,
+    width: "70%",
     fontSize: 16,
     borderRadius: 8,
     height: 45,
@@ -125,7 +127,7 @@ const styles = StyleSheet.create({
     paddingLeft: 10
   },
   button: {
-    width: 100,
+    width: "25%",
     height: 45,
     alignItems: 'center',
     justifyContent: "center",

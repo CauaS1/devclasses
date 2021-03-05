@@ -6,7 +6,7 @@ import { View, StyleSheet } from 'react-native';
 const FormRow = props => {
   const { children } = props
   return (
-    <View>
+    <View style={{ width: '100%' }}>
       { children }
     </View>
   );

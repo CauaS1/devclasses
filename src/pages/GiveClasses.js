@@ -20,7 +20,7 @@ export default class GiveClasses extends Component {
             <TextInput placeholder="Price" style={styles.input} />
 
             <TouchableOpacity style={styles.button}>
-              <Text style={{ color: "#fff" }} >Create Class</Text>
+              <Text style={{ color: "#fff", fontWeight: 'bold' }} >Create Class</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   input: {
-    width: 300,
+    width: "90%",
     fontSize: 16,
     borderRadius: 8,
     height: 45,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   button: {
-    width: 100,
+    width: '90%',
     height: 45,
     alignItems: 'center',
     justifyContent: "center",
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     borderRadius: 8
   },
   textarea: {
-    width: 300,
+    width: '90%',
     fontSize: 16,
     borderRadius: 8,
     backgroundColor: "#f5f5f5",

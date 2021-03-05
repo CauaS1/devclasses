@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, Dimensions, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, StyleSheet, Dimensions, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 
 import Header from '../components/Header'
 import CauaS1 from '../images/profile-pic.jpg';
@@ -8,6 +8,7 @@ import CauaS1 from '../images/profile-pic.jpg';
 const Profile = props => {
   return (
     <View style={styles.container}>
+      <StatusBar translucent={false} backgroundColor="#643df2" barStyle="light-content" />
       <Header />
       <View style={styles.imgAndName}>
         <Text style={styles.name}>CauaS1</Text>

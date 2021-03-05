@@ -74,7 +74,7 @@ export default class LoginPage extends Component {
       <TouchableOpacity style={styles.btn} onPress={() => {
         this.loginAccount()
       }} >
-        <Text style={{ color: "#fff" }}>Sing Up</Text>
+        <Text style={{ color: "#fff" }}>Sign Up</Text>
       </TouchableOpacity>
     );
   }
@@ -105,12 +105,11 @@ export default class LoginPage extends Component {
           {this.message()}
         </View>
 
-
         <View style={styles.footer}>
           <Image source={Login} style={styles.image} />
 
           <TouchableOpacity style={styles.footer} onPress={() => { this.props.navigation.navigate('Register') }} >
-            <Text style={{ color: "#643df2" }}  >Don't have an account? Sing up </Text>
+            <Text style={{ color: "#643df2" }}  >Don't have an account? Sign up </Text>
           </TouchableOpacity>
         </View>
 
@@ -121,15 +120,13 @@ export default class LoginPage extends Component {
 
 const styles = StyleSheet.create({
   mainContainer: {
+    flex: 1,
     backgroundColor: "#fff",
-    height: deviceHeight,
     alignItems: "center",
-    paddingTop: 20,
-    paddingBottom: 20,
     justifyContent: "space-around",
   },
   form: {
-    width: "90%",
+    width: "100%",
     justifyContent: "center",
     alignItems: "center",
     padding: 10,
@@ -137,19 +134,20 @@ const styles = StyleSheet.create({
     marginTop: 20
   },
   input: {
-    borderBottomWidth: 2,
-    borderBottomColor: "#643df2",
-    width: 320,
+    width: "100%",
     height: 45,
+
+    borderBottomWidth: 1,
+    borderBottomColor: "#643df2",
     marginTop: 8,
-    borderRadius: 20,
     paddingLeft: 15,
     paddingBottom: 0,
     fontSize: 17
   },
   title: {
-    fontSize: 20,
-    color: "#a58dff"
+    fontWeight: 'bold',
+    fontSize: 22,
+    color: "#343df2"
   },
   btn: {
     width: 150,
